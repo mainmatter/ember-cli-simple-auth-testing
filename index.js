@@ -26,7 +26,8 @@ EmberCLISimpleAuthTesting.prototype.included = function included(app) {
 
   this.app.import('vendor/ember-simple-auth/simple-auth-testing.amd.js', {
     exports: {
-      'simple-auth-testing/test-helpers': ['default']
+      'simple-auth-testing/test-helpers': ['default'],
+      'simple-auth-testing/initializer':  ['default']
     }
   });
 };
