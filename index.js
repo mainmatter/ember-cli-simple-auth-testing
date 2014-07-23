@@ -16,7 +16,7 @@ function unwatchedTree(dir) {
 EmberCLISimpleAuthTesting.prototype.treeFor = function included(name) {
   var treePath = path.join('node_modules/ember-cli-simple-auth-testing', name + '-addon');
 
-  if (fs.existsSync(treePath)) {
+  if (this.app.env !== 'production' && fs.existsSync(treePath)) {
     return unwatchedTree(treePath);
   }
 };
@@ -24,12 +24,14 @@ EmberCLISimpleAuthTesting.prototype.treeFor = function included(name) {
 EmberCLISimpleAuthTesting.prototype.included = function included(app) {
   this.app = app;
 
-  this.app.import('vendor/ember-simple-auth/simple-auth-testing.amd.js', {
-    exports: {
-      'simple-auth-testing/test-helpers': ['default'],
-      'simple-auth-testing/initializer':  ['default']
-    }
-  });
+  if (this.app.env !== 'production') {
+    this.app.import('vendor/ember-simple-auth/simple-auth-testing.amd.js', {
+      exports: {
+        'simple-auth-testing/test-helpers': ['default'],
+        'simple-auth-testing/initializer':  ['default']
+      }
+    });
+  }
 };
 
 module.exports = EmberCLISimpleAuthTesting
