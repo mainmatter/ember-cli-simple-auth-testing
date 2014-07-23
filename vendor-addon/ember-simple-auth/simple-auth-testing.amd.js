@@ -53,7 +53,7 @@ define("simple-auth-testing/initializer",
     };
   });
 define("simple-auth-testing/test-helpers", 
-  ["../configuration","exports"],
+  ["simple-auth/configuration","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
     var Configuration = __dependency1__["default"];
