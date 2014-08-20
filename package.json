@@ -20,5 +20,8 @@
     "type": "git",
     "url": "git://github.com/simplabs/ember-cli-simple-auth-testing"
   },
-  "homepage": "https://github.com/simplabs/ember-cli-simple-auth-testing"
+  "homepage": "https://github.com/simplabs/ember-cli-simple-auth-testing",
+  "dependencies": {
+    "ember-cli-simple-auth": "0.6.4-1"
+  }
 }
