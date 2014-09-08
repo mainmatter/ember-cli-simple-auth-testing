@@ -6,10 +6,13 @@ Addon.
 
 ## Installation
 
+**Ember Simple Auth testing requires at least Ember CLI 0.0.42.**
+
 To install simply run
 
 ```
 npm install --save-dev ember-cli-simple-auth-testing
+ember generate ember-cli-simple-auth-testing
 ```
 
 in your Ember CLI project's root.
