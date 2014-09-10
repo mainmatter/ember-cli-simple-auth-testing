@@ -1,12 +1,6 @@
 var path = require('path');
 var fs   = require('fs');
 
-function unwatchedTree(dir){
-  return {
-    read: function() { return dir; }
-  };
-}
-
 module.exports = {
   name: 'Ember CLI Simple Auth Testing',
 
@@ -17,7 +11,7 @@ module.exports = {
 
     var treePath = path.join(__dirname, name);
     if (fs.existsSync(treePath)) {
-      return unwatchedTree(treePath);
+      this.treeGenerator(treePath);
     }
   },
 
