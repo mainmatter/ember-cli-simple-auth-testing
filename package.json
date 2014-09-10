@@ -2,7 +2,7 @@
   "name": "ember-cli-simple-auth-testing",
   "author": "Marco Otte-Witte",
   "license": "MIT",
-  "version": "0.6.4-1",
+  "version": "0.6.6",
   "description": "Include the Ember Simple Auth Testing extension library into an Ember CLI application.",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/simplabs/ember-cli-simple-auth-testing",
   "dependencies": {
-    "ember-cli-simple-auth": "0.6.4-1"
+    "ember-cli-simple-auth": "0.6.6"
   }
 }
