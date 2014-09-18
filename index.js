@@ -11,7 +11,7 @@ module.exports = {
 
     var treePath = path.join(__dirname, name);
     if (fs.existsSync(treePath)) {
-      this.treeGenerator(treePath);
+      return this.treeGenerator(treePath);
     }
   },
 
