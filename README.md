@@ -17,5 +17,20 @@ ember generate ember-cli-simple-auth-testing
 
 in your Ember CLI project's root.
 
+## Configuration
+
+When using the testing helpers also make sure to use the ephemeral session
+store for the `test` environment as otherwise the session will be persisted and
+tests might influence each other.
+
+```js
+//config/environment.js
+if (environment === 'test') {
+  ENV['simple-auth'] = {
+    store: 'simple-auth-session-store:ephemeral'
+  }
+}
+```
+
 For the actual Ember Simple Auth repository see
 https://github.com/simplabs/ember-simple-auth
