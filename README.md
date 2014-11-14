@@ -15,7 +15,17 @@ npm install --save-dev ember-cli-simple-auth-testing
 ember generate ember-cli-simple-auth-testing
 ```
 
-in your Ember CLI project's root.
+in your Ember CLI project's root. You also need to import the helpers -
+preferrably in the app's `tests/helpers/start-app.js` file:
+
+```js
+…
+
+import 'simple-auth-testing/test-helpers';
+
+export default function startApp(attrs) {
+  …
+```
 
 ## Configuration
 
