@@ -11,12 +11,20 @@ Addon.
 To install simply run
 
 ```
+ember install:addon ember-cli-simple-auth-testing
+```
+
+in your Ember CLI project's root.
+
+If you're using Ember CLI 0.1.4 or older, run
+
+```
 npm install --save-dev ember-cli-simple-auth-testing
 ember generate ember-cli-simple-auth-testing
 ```
 
-in your Ember CLI project's root. You also need to import the helpers -
-preferrably in the app's `tests/helpers/start-app.js` file:
+You also need to import the helpers - preferrably in the app's
+`tests/helpers/start-app.js` file:
 
 ```js
 …
