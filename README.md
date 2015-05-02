@@ -6,7 +6,7 @@ Addon.
 
 ## Installation
 
-**Ember Simple Auth testing requires at least Ember CLI 0.4.7.**
+**Ember Simple Auth testing requires at least Ember CLI 0.0.47**
 
 To install simply run
 
