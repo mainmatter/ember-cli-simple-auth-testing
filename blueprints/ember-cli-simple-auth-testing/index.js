@@ -7,7 +7,8 @@ module.exports = {
   afterInstall: function() {
     this.insertIntoFile('tests/.jshintrc',
       '    "authenticateSession",' + EOL +
-      '    "invalidateSession",',
+      '    "invalidateSession",' + EOL +
+      '    "currentSession",',
       { after: '  "predef": [' + EOL }
     );
 
