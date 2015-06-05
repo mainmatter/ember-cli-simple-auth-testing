@@ -12,6 +12,6 @@ module.exports = {
       { after: '  "predef": [' + EOL }
     );
 
-    return this.addBowerPackageToProject('ember-simple-auth', '0.8.0-beta.2');
+    return this.addBowerPackageToProject('ember-simple-auth', '0.8.0-beta.3');
   }
 };
